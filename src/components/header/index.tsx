@@ -1,12 +1,13 @@
-import { HeaderContainer, ImageProfile, MenuItens, Profile } from "./style";
+import { HeaderContainer, ImageProfile, MenuItens, Profile, ProfileContainer } from "./style";
+import profileImagem from '../../assets/Profile-.jpeg';
 
 export default function Header() {
     return (
         <HeaderContainer>
-            <ImageProfile>
-                <img src="../public/assets/profile.jpeg"></img>
-            </ImageProfile>
+            <ProfileContainer>
+            <ImageProfile src={profileImagem}    alt = "profile image"/>
             <Profile>Guilherme Becker</Profile>
+            </ProfileContainer>
             <MenuItens>
                 <ul>
                     <li>Home</li>
