@@ -1,14 +1,15 @@
-import { About, Introduction, Title, MainContainer  } from "./style";
+import {  MainContainer, Link, Hello, Title, About } from "./style";
 
 
 export default function Text(){
     return (
         <MainContainer>
-            <Introduction>Hi, my name is Gui</Introduction>
+            <Hello><Link href="#">
+            Hello, I'm Gui
+            </Link></Hello>
             <Title>Developer</Title>
-            <About>
-                I'm a begginer in the software world, searching for my first job how a developer.
-            </About>
+            <About> Sou estudante de Ciência da Computação e estou em busca de me tornar um desenvolvedor focado em back-end. 
+                Agradeço por visitar meu portfólio e espero que você goste do meu trabalho.</About>
         </MainContainer>
     );
 }
