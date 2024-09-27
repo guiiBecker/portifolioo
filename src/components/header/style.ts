@@ -1,10 +1,7 @@
 import styled from "styled-components";
 
 
-export const MainContainer = styled.div`
 
-
-`;
 export const HeaderContainer = styled.header `
   display: flex;
   align-items: center; // Centraliza verticalmente os itens
