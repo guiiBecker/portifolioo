@@ -11,20 +11,31 @@ export const MainContainer = styled.div
 `;
 export const Hello = styled.p 
 `
+ margin-bottom:10px;
  font-size: 20px;
 `;
 
-export const Link = styled.a 
+export const NavLink = styled.a``;
+
+export const StyledNavLink = styled(NavLink)
 `
  text-decoration: none;
+ color: #df3131; 
+ &:hover,
+ &:focus {
+    color: #c22222;
+  } &active{
+    color: #df3131;  
+  }
 `;
 
 export const Title = styled.h1
 `
- margin: 0; 
+ 
 `;
 
 export const About = styled.p
 `
+ margin-bottom: 10px;
  font-size: 25px;
 `;
