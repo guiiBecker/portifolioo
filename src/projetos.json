@@ -1,0 +1,22 @@
+[
+ {
+    "name":"ecommerce-frontend",
+    "tech":"typescript",
+    "finishedIn":"08/2024",
+    "howdo":"solo",
+    "link":"https://github.com/guiiBecker/ecommerce-front",
+    "type":"Frontend"
+ },
+ {
+    "name":"ecommerce-backend",
+    "tech":"typescript",
+    "finishedIn":"08/2024",
+    "howdo":"solo",
+    "link":"https://github.com/guiiBecker/ecommerce",
+    "type":"backend"
+ }
+
+
+
+
+]
