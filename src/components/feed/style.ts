@@ -21,6 +21,8 @@ export const BannerContainer = styled.div
  height: 100px;
  width: 300px;
  background-color: #0000ff;
+ background-size: cover;
+ background-position: center;
  flex-direction: column;
  justify-content: space-around;
  padding: 16px;
