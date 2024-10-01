@@ -1,4 +1,5 @@
-[
+{
+  "projetos": [
  {
     "name":"ecommerce-frontend",
     "tech":"typescript",
@@ -17,3 +18,4 @@
  }
 
 ]
+}

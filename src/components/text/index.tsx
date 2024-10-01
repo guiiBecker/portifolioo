@@ -8,7 +8,7 @@ export default function Text(){
             Hello, I'm Gui
             </StyledNavLink></Hello>
             <Title>Developer</Title>
-            <About> Sou estudante de Ciência da Computação e estou em busca de me tornar um desenvolvedor focado em back-end. 
+            <About> Sou estudante de Ciência da Computação e estou em busca de me tornar um desenvolvedor back-end. 
                 Agradeço por visitar meu portfólio e espero que você goste do meu trabalho.</About>
         </MainContainer>
     );

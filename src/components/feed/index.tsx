@@ -2,7 +2,7 @@ import { BannerContainer, CardTitle, ContainerCards } from "./style";
 import { useState, useEffect } from "react";
 import backendimage from '../../assets/backend-coding.png';
 import frontendimage from '../../assets/ux-design.png';
-import projetos from '../../projetos.json'; // Importando o JSON diretamente
+import { error } from "console";
 
 interface Projeto {
     name: string;
@@ -13,26 +13,33 @@ interface Projeto {
     type: string;
 }
 
-export default function Feed() {
-    const [backgroundImage, setBackgroundImage] = useState<string>('');
+export default function Feed (){
+   
+        const [projetos, setProjetos] = useState <Projeto[]>([]);
 
-    useEffect(() => {
-        // Use os dados diretamente
-        projetos.forEach((item: Projeto) => {
-            if (item.type.toLowerCase() === 'backend') {
-                setBackgroundImage(backendimage);
-                console.log('backend');
-            } else if (item.type.toLowerCase() === 'frontend') {
-                setBackgroundImage(frontendimage);
-                console.log('frontend');
-            }
-        });
-    }, []);// Chama apenas uma vez ao montar
+        useEffect(() =>{
+            const fetchData = async() =>{
+                const response = await fetch('/projetos.json')
+                const data = await response.json();
 
-    return (
-        <ContainerCards>
-          <BannerContainer></BannerContainer>
-            <CardTitle>Vasco</CardTitle>
-        </ContainerCards>
-    );
-}
+
+            setProjetos(data.projetos);
+            };
+
+            fetchData();
+
+        }, []);// fim useEfect
+        return(
+            <div>
+            {projetos.map((projeto: Projeto, index: number) => (
+                <ContainerCards>
+                    <BannerContainer></BannerContainer>
+                    <CardTitle>{projeto.name}</CardTitle>
+
+                </ContainerCards>
+            ))}
+            </div>
+
+        )
+    }
+

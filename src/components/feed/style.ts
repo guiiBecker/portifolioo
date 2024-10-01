@@ -32,9 +32,15 @@ export const CardTitle = styled.p
 `
  color: white;
  padding: 10px;
+ font-size: 20px;
 `;
 
+export const CardParagh = styled.p 
+`
+ color:white;
+ font-size: 15px;
 
+`;
 
 
 
