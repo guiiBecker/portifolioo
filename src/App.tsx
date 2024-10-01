@@ -10,7 +10,6 @@ function App() {
       <Header></Header>
       <Text></Text>
       <Feed></Feed>
-        <MyButton />
   
     </div>
   );
