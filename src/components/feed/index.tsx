@@ -1,8 +1,9 @@
-import { BannerContainer, CardTitle, ContainerCards } from "./style";
+import { BannerContainer, CardInfos, CardParagh, CardTitle, ContainerCards, StyledLink } from "./style";
 import { useState, useEffect } from "react";
 import backendimage from '../../assets/backend-coding.png';
 import frontendimage from '../../assets/ux-design.png';
 import { error } from "console";
+import GithubImage from '../../assets/github.png'
 
 interface Projeto {
     name: string;
@@ -33,9 +34,14 @@ export default function Feed (){
             <div>
             {projetos.map((projeto: Projeto, index: number) => (
                 <ContainerCards>
-                    <BannerContainer></BannerContainer>
-                    <CardTitle>{projeto.name}</CardTitle>
-
+                    <StyledLink href={projeto.link} target="_blank">
+                    <BannerContainer hoverImage={GithubImage}></BannerContainer>
+                    </StyledLink>
+                    <CardInfos>
+                        <CardTitle>{projeto.name}</CardTitle>
+                        <CardParagh>{projeto.tech}</CardParagh>
+                        <CardParagh>{projeto.type}</CardParagh>
+                    </CardInfos>
                 </ContainerCards>
             ))}
             </div>
