@@ -41,6 +41,7 @@ export default function Feed (){
                         <CardTitle>{projeto.name}</CardTitle>
                         <CardParagh>{projeto.tech}</CardParagh>
                         <CardParagh>{projeto.type}</CardParagh>
+                        <CardParagh>{projeto.finishedIn}</CardParagh>
                     </CardInfos>
                 </ContainerCards>
             ))}

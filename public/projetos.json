@@ -1,16 +1,16 @@
 {
   "projetos": [
  {
-    "name":"ecommerce-frontend",
-    "tech":"typescript",
+    "name":"Ecommerce-Frontend",
+    "tech":"TypeScript",
     "finishedIn":"08/2024",
     "howdo":"solo",
     "link":"https://github.com/guiiBecker/ecommerce-front",
-    "type":"Frontend"
+    "type":"frontend"
  },
  {
-    "name":"ecommerce-backend",
-    "tech":"typescript",
+    "name":"Ecommerce-Backend",
+    "tech":"TypeScript",
     "finishedIn":"08/2024",
     "howdo":"solo",
     "link":"https://github.com/guiiBecker/ecommerce",
