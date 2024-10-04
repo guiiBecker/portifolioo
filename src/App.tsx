@@ -1,16 +1,18 @@
 
-import Feed from './components/feed';
-import Header from './components/header';
-import Text from './components/text';
-
+import { Route, BrowserRouter, Routes } from 'react-router-dom';
+import Home from './pages/home';
 function App() {
   return (
-    <div className="App">
-      <Header></Header>
-      <Text></Text>
-      <Feed></Feed>
-  
-    </div>
+
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<Home />}>
+        
+        </Route>
+      </Routes>
+    
+    </BrowserRouter>
+    
   );
 }
 
