@@ -1,14 +1,15 @@
 import Feed from '../components/feed';
 import Header from '../components/header';
+import MainLayout from '../components/mainlayout';
 import Text from '../components/text';
 
 export default function Home() {
   return (
     <div className="Home">
-      <Header></Header>
-      <Text></Text>
-      <Feed></Feed>
-  
+      <MainLayout>
+        <Text></Text>
+        <Feed></Feed>
+      </MainLayout>
     </div>
   );
 }
