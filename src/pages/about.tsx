@@ -6,7 +6,7 @@ import MainLayout from "../components/mainlayout";
 export default function About(){
     return(
         <MainLayout>
-            <div></div>
+            <Layout></Layout>
         </MainLayout>
     );
 };
