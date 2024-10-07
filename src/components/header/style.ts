@@ -4,13 +4,13 @@ import styled from "styled-components";
 
 export const HeaderContainer = styled.header `
   display: flex;
-  align-items: center; // Centraliza verticalmente os itens
+  align-items: center; 
   justify-content: space-between;
   padding: 16px;
 `; 
 export const ProfileContainer = styled.div`
   display: flex;
-  align-items: center; // Alinha verticalmente a imagem e o nome
+  align-items: center; 
 `;
 export const ImageProfile = styled.img`
  display: block;
@@ -26,19 +26,36 @@ export const Profile = styled.h1 `
  color: white;
  padding: 0.9em;
 
-
 `;
-
 
 export const MenuItens = styled.ul `
 display: flex;
-  margin: 0; // Remover margens do UL para centralizar melhor
+  margin: 0; 
   li {
     list-style-type: none;
     display: inline-flex;
-    margin: 0 15px; // Espaçamento horizontal entre os itens do menu
+    margin: 0 15px; 
     color: white;
-    font-size: 18px; // Tamanho da fonte dos itens do menu
+    font-size: 18px; 
+    &:hover,
+    &:focus {
+     color: #c22222;
+     text-decoration: underline;
+     transition:
+      transform: 0.3s ease;
+      
   }
+`;
 
+
+export const NavLink = styled.a``;
+export const StyledNavLink = styled(NavLink)
+`
+ text-decoration: none;
+ color: #df3131; 
+ 
+  } &active{
+    
+    color: #df3131;
+  }
 `;

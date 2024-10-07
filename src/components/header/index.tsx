@@ -1,4 +1,4 @@
-import { HeaderContainer, ImageProfile, MenuItens, Profile, ProfileContainer } from "./style";
+import { HeaderContainer, ImageProfile, MenuItens, Profile, ProfileContainer, StyledNavLink } from "./style";
 import profileImagem from '../../assets/Profile-.jpeg';
 
 export default function Header() {
@@ -10,9 +10,9 @@ export default function Header() {
             </ProfileContainer>
             <MenuItens>
                 <ul>
-                    <li>Home</li>
-                    <li>Projetos</li>
-                    <li>About</li>
+                    <StyledNavLink href="/" ><li>Home</li></StyledNavLink>
+                    <StyledNavLink href="" ><li>Projetos</li></StyledNavLink>
+                    <StyledNavLink href="about" ><li>About</li></StyledNavLink>
                 </ul>
             </MenuItens>
         </HeaderContainer>
