@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { DivContainer, DivProjeto, ProjetoDescript, ProjetoName, StyledNavLink, ProjetoInfos } from "./styles";
+import { DivContainer, DivProjeto, ProjetoDescript, ProjetoName, StyledNavLink, ProjetoInfos, ProjetosPage } from "./styles";
 
 
 interface Projeto{
@@ -30,6 +30,7 @@ export default function ProjetosFeed(){
 
     return(   
             <DivContainer>
+                <ProjetosPage>Projetos</ProjetosPage>
             {projetos && projetos.length > 0 ? (
                 projetos.map((projeto:Projeto, index: number) => (
                     <DivProjeto key={index}>
