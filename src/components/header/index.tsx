@@ -11,8 +11,8 @@ export default function Header() {
             <MenuItens>
                 <ul>
                     <StyledNavLink href="/" ><li>Início</li></StyledNavLink>
-                    <StyledNavLink href="" ><li>Projetos</li></StyledNavLink>
-                    <StyledNavLink href="about" ><li>Sobre</li></StyledNavLink>
+                    <StyledNavLink href="/projetos" ><li>Projetos</li></StyledNavLink>
+                    <StyledNavLink href="/about" ><li>Sobre</li></StyledNavLink>
                 </ul>
             </MenuItens>
         </HeaderContainer>
