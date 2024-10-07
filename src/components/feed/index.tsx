@@ -12,6 +12,7 @@ interface Projeto {
     howdo: string;
     link: string;
     type: string;
+    text: string;
 }
 
 export default function Feed (){
@@ -29,7 +30,7 @@ export default function Feed (){
 
             fetchData();
 
-        }, []);// fim useEfect
+        }, []);// fim do data projetos
         return(
             <div>
             {projetos.map((projeto: Projeto, index: number) => (

@@ -43,7 +43,6 @@ display: flex;
      text-decoration: underline;
      transition:
       transform: 0.3s ease;
-      
   }
 `;
 

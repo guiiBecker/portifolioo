@@ -1,10 +1,16 @@
 import Header from "../components/header"
+import MainLayout from "../components/mainlayout";
+import ProjetosFeed from "../components/projetos";
 
 
 
 export default function Projetos(){
     return (
-        <Header></Header>
+        <MainLayout>
+            <ProjetosFeed></ProjetosFeed>
+        </MainLayout>
+        
+
     );
 };
 
