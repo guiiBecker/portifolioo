@@ -10,9 +10,9 @@ export default function Header() {
             </ProfileContainer>
             <MenuItens>
                 <ul>
-                    <StyledNavLink href="/" ><li>Home</li></StyledNavLink>
+                    <StyledNavLink href="/" ><li>Início</li></StyledNavLink>
                     <StyledNavLink href="" ><li>Projetos</li></StyledNavLink>
-                    <StyledNavLink href="about" ><li>About</li></StyledNavLink>
+                    <StyledNavLink href="about" ><li>Sobre</li></StyledNavLink>
                 </ul>
             </MenuItens>
         </HeaderContainer>

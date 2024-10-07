@@ -4,7 +4,7 @@ import { MainAbout, MainText, TopicTitles, SocialMedias, IconsSocial, DivText, T
 export default function Layout(){
     return(
         <MainAbout>
-            <Title> Hello There.</Title>
+            <Title> Saudações!</Title>
             <DivText>
                 <MainText>
                 Eu sou Guilherme G. Becker, estudante de Ciências da Computação 
