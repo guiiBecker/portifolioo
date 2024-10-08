@@ -1,4 +1,4 @@
-import { BannerContainer, CardInfos, CardParagh, CardTitle, ContainerCards, StyledLink } from "./style";
+import { BannerContainer, CardInfos, CardParagh, CardTitle, ContainerCards, StyledLink, StyledDivExt } from "./style";
 import { useState, useEffect } from "react";
 import backendimage from '../../assets/backend-coding.png';
 import frontendimage from '../../assets/ux-design.png';
@@ -45,7 +45,7 @@ export default function Feed (){
             return dateB - dateA; 
         });
         return(
-            <div>
+            <StyledDivExt>
             {sortedProjetos.slice(0, 8).map((projeto: Projeto, index: number) => (
                 <ContainerCards>
                     <StyledLink href={projeto.link} target="_blank">
@@ -59,7 +59,7 @@ export default function Feed (){
                     </CardInfos>
                 </ContainerCards>
             ))}
-            </div>
+            </StyledDivExt>
 
         )
     }

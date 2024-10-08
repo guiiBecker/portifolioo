@@ -81,3 +81,8 @@ export const CardParagh = styled.p
 `;
 export const StyledLink = styled.a
 ``;
+
+export const StyledDivExt = styled.div
+`
+ margin-left: 50px;
+`;
