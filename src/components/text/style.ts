@@ -7,6 +7,7 @@ export const MainContainer = styled.div
  color: white;  
  align-itens: center;
  font-size: 30px;
+ margin: 10px 10px 10px 10px;
  
 `;
 export const Hello = styled.p 
