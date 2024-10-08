@@ -4,9 +4,6 @@ import styled from "styled-components"
 interface StyledDivProps{
     hoverImage: string;
 }
-
-
-
 export const ContainerCards = styled.div
 `
  width: 300px;
@@ -19,9 +16,7 @@ export const ContainerCards = styled.div
  flex-wrap: wrap;
  margin:10px;
  position:relative;
-
 `;
-
 export const BannerContainer = styled.div<StyledDivProps>
 `
  display: flex;
@@ -61,19 +56,14 @@ export const BannerContainer = styled.div<StyledDivProps>
     background-position: center;
     opacity: 0.7;
   }
-
-
 `;
-
 export const CardInfos = styled.div
 `
  margin:0;
-
  padding-top: 0;
  display: flex: 
  align-itens: left;
 `;
-
 export const CardTitle = styled.p
 `
  margin:0;
@@ -81,7 +71,6 @@ export const CardTitle = styled.p
  padding: 7px;
  font-size: 20px;
 `;
-
 export const CardParagh = styled.p 
 `
  color:white;
@@ -89,13 +78,6 @@ export const CardParagh = styled.p
  margin:0;
  padding-top: 5px;
  padding-left: 10px;
-
 `;
-
-
 export const StyledLink = styled.a
-`
- 
-
-`;
-export{}
+``;

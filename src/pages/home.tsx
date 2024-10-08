@@ -1,3 +1,4 @@
+import ButtonHomePage from '../components/buttons/homebutton';
 import Feed from '../components/feed';
 import Header from '../components/header';
 import MainLayout from '../components/mainlayout';
@@ -9,6 +10,7 @@ export default function Home() {
       <MainLayout>
         <Text></Text>
         <Feed></Feed>
+        <ButtonHomePage></ButtonHomePage>
       </MainLayout>
     </div>
   );
