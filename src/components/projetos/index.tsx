@@ -12,9 +12,11 @@ interface Projeto{
     text: string;
 };
 
+const ITEMS_PER_PAGE = 8;
 
 export default function ProjetosFeed(){
     const [projetos, setProjetos] =  useState <Projeto[]>([]);
+    const [currentPage, setCurrentPage] = useState<number>(1);
 
     useEffect(() => {
         const fetchData = async() => {
@@ -27,6 +29,14 @@ export default function ProjetosFeed(){
         };
         fetchData();
     }, []); // fim do data projetos
+
+    const totalPages = Math.ceil(projetos.length/ITEMS_PER_PAGE);
+    
+
+    const currentProjects = projetos.slice(
+        (currentPage -1) * ITEMS_PER_PAGE,
+        currentPage * ITEMS_PER_PAGE
+    );
 
     return(   
             <DivContainer>
@@ -45,7 +55,21 @@ export default function ProjetosFeed(){
         ):(
             <ProjetoDescript>Sem projetos disponiveis</ProjetoDescript>
         )}
+                <div>
+                    <button
+                        onClick={() => setCurrentPage((prev) => Math.max(prev - 1, 1))}
+                        disabled={currentPage === 1}>
+                        Anterior
+                    </button>
+                    <span>{` Página ${currentPage} de ${totalPages} `}</span>
+                    <button
+                        onClick={() => setCurrentPage((prev) => Math.min(prev + 1, totalPages))}
+                        disabled={currentPage === totalPages}>
+                        Próximo
+                    </button>
+                </div>
             </DivContainer>
+           
     );
 
 

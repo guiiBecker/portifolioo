@@ -1,24 +1,16 @@
 import styled from "styled-components"
 
-
-
-
 export const DivContainer = styled.div
 `
  justify-content: center;
  align-itens: center;
  margin: 10px 100px 10px 100px;
 `;
-
-
 export const DivProjeto = styled.div
 `
  margin: 10px 300px 10px 300px;
-
  align-text: left;
-
 `;
-
 export const ProjetosPage = styled.h1 
 `
  color: white; 
@@ -62,6 +54,3 @@ export const StyledNavLink = styled(NavLink)
     color: #df3131;
   }
 `;
-
-
-export {}
