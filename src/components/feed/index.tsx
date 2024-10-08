@@ -31,9 +31,21 @@ export default function Feed (){
             fetchData();
 
         }, []);// fim do data projetos
+
+
+        const sortedProjetos = projetos.sort((a, b) => {
+            const [monthA, yearA] = a.finishedIn.split('/').map(Number);
+            const [monthB, yearB] = b.finishedIn.split('/').map(Number);
+            
+            
+            const dateA = yearA * 12 + monthA; 
+            const dateB = yearB * 12 + monthB; 
+    
+            return dateB - dateA; 
+        });
         return(
             <div>
-            {projetos.map((projeto: Projeto, index: number) => (
+            {sortedProjetos.slice(0, 8).map((projeto: Projeto, index: number) => (
                 <ContainerCards>
                     <StyledLink href={projeto.link} target="_blank">
                     <BannerContainer hoverImage={GithubImage}></BannerContainer>
