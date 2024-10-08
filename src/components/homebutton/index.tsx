@@ -1,4 +1,3 @@
-import { StyledLink } from "../../feed/style";
 import { ButtonStyled, DivButton, NavLink } from "./style";
 
 

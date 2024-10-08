@@ -4,7 +4,7 @@ import backendimage from '../../assets/backend-coding.png';
 import frontendimage from '../../assets/ux-design.png';
 import { error } from "console";
 import GithubImage from '../../assets/github.png'
-import ButtonHomePage from "../buttons/homebutton";
+import ButtonHomePage from "../homebutton";
 
 interface Projeto {
     name: string;

@@ -54,3 +54,5 @@ export const StyledNavLink = styled(NavLink)
     color: #df3131;
   }
 `;
+export const ButtonsStyled = styled.button
+``;
