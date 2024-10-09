@@ -38,10 +38,10 @@ export default function ProjetosFeed() {
         return dateB - dateA; // Ordenação decrescente
     });
 
-    // Cálculo da paginação
+    
     const totalPages = Math.ceil(sortedProjetos.length / ITEMS_PER_PAGE);
 
-    // Obtenção dos projetos da página atual
+    
     const currentProjects = sortedProjetos.slice(
         (currentPage - 1) * ITEMS_PER_PAGE,
         currentPage * ITEMS_PER_PAGE
