@@ -2,6 +2,7 @@ import { hover } from "@testing-library/user-event/dist/hover";
 import styled from "styled-components"
 
 interface StyledDivProps{
+    image:string;
     hoverImage: string;
 }
 export const ContainerCards = styled.div
@@ -23,7 +24,7 @@ export const BannerContainer = styled.div<StyledDivProps>
  position: relative;
  height: 100px;
  width: 300px;
- background-color: #0000ff;
+ background-image: url(${(props) => props.image});
  background-size: cover;
  background-position: center;
  flex-direction: column;
@@ -56,6 +57,7 @@ export const BannerContainer = styled.div<StyledDivProps>
     background-position: center;
     opacity: 0.7;
   }
+
 `;
 export const CardInfos = styled.div
 `

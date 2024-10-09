@@ -106,6 +106,7 @@ export const ProjetoDescript = styled.p`
   margin: 0.625em 0;
   font-size: 1.3125em;
   color: white;
+  text-align: justify;
 
   @media (max-width: 768px) {
     font-size: 1.125em;

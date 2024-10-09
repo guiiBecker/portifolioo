@@ -14,6 +14,7 @@ interface Projeto {
     link: string;
     type: string;
     text: string;
+    image:string;
 }
 
 export default function Feed (){
@@ -49,7 +50,8 @@ export default function Feed (){
             {sortedProjetos.slice(0, 8).map((projeto: Projeto, index: number) => (
                 <ContainerCards>
                     <StyledLink href={projeto.link} target="_blank">
-                    <BannerContainer hoverImage={GithubImage}></BannerContainer>
+                    <BannerContainer image={projeto.image} hoverImage={GithubImage}>
+                    </BannerContainer>
                     </StyledLink>
                     <CardInfos>
                         <CardTitle>{projeto.name}</CardTitle>
