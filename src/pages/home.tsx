@@ -1,6 +1,5 @@
 import ButtonHomePage from '../components/homebutton';
 import Feed from '../components/feed';
-import Header from '../components/header';
 import MainLayout from '../components/mainlayout';
 import Text from '../components/text';
 

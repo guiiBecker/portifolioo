@@ -1,4 +1,4 @@
-import { MainAbout, MainText, TopicTitles, SocialMedias, IconsSocial, DivText, Title, CommonText  } from "./style";
+import { MainAbout, MainText, TopicTitles, DivText, Title, CommonText  } from "./style";
 
 
 export default function Layout(){

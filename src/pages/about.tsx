@@ -1,5 +1,4 @@
 import Layout from "../components/about";
-import Header from "../components/header"
 import MainLayout from "../components/mainlayout";
 
 

@@ -1,10 +1,7 @@
 import { BannerContainer, CardInfos, CardParagh, CardTitle, ContainerCards, StyledLink, StyledDivExt } from "./style";
-import { useState, useEffect } from "react";
-import backendimage from '../../assets/backend-coding.png';
-import frontendimage from '../../assets/ux-design.png';
-import { error } from "console";
+import { useState, useEffect } from "react"; 
 import GithubImage from '../../assets/github.png'
-import ButtonHomePage from "../homebutton";
+
 
 interface Projeto {
     name: string;
