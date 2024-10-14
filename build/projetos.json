@@ -1,0 +1,25 @@
+{
+  "projetos": [
+ {
+    "name":"Ecommerce-Frontend",
+    "tech":"React, JavaScript",
+    "finishedIn":"08/2024",
+    "howdo":"solo",
+    "link":"https://github.com/guiiBecker/ecommerce-front",
+    "type":"frontend",
+    "text":"Este projeto FrontEnd foi minha entrega final do estágio na empresa CompassUol, neste projeto deveria ser entregue algumas funcionalidades, como um carrinho completamente funcional. ",
+    "image":"/teste.png"
+ },
+ {
+    "name":"Ecommerce-Backend",
+    "tech":"TypeScript, NestJS",
+    "finishedIn":"08/2024",
+    "howdo":"solo",
+    "link":"https://github.com/guiiBecker/ecommerce",
+    "type":"backend",
+    "text":"Este projeto Backend, é o backend do projeto e-commerce frontend, este contém o sistema de login e cadastro de usuário, assim como a api para envio de informações dos produtos contidos no banco de dados. ",
+    "image":"/apii.png"
+ }
+
+]
+}
